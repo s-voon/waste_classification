@@ -34,11 +34,19 @@ conda activate waste_org
 
 ## Usage
 
-- For detailed, step-by-step instructions on how to train the model and use it for inference, please refer to the notebook directory.
+- For detailed, step-by-step instructions on how to train the model and use it for inference, please refer to the [notebook](notebook/waste_classification.ipynb) directory.
 
 - To make predictions using the trained model from the terminal, run the following command:
 ```bash
 python src/predict.py IMAGE_PATH
+```
+- To evaluate
+```bash
+python script/evaluate.py model_waste.pt DATASET/TEST/
+```
+- To train
+```bash
+python script/train.py "DATASET/TRAIN/" "DATASET/TEST/" 1
 ```
 
 ## Contributing Guidelines
